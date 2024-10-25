@@ -7,7 +7,13 @@ Try running it for
 Hint - use Date class exposed in JS
 There is no automated test for this one, this is more for you to understand time goes up as computation goes up
 */
-
 function calculateTime(n) {
-    return 0.01;
+    let x = 1;
+    let before = Date.now();
+    for(let i=1;i<=n;i++){
+        x=x+i;
+    }
+    let after = Date.now();
+    let time = (after - before)/1000;
+    return time;
 }

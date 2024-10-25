@@ -4,7 +4,12 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  let reversedStr = str.split("").reverse().join("");
+  if(reversedStr == str){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 module.exports = isPalindrome;
