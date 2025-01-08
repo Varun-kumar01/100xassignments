@@ -16,6 +16,14 @@
   Once you've implemented the logic, test your code by running
 */
 
-class Calculator {}
+class Calculator {
+  constructor(){
+    this.result = 0;
+  }
+}
+function calculator(str){
+  const newOperation = new Calculator;
+  console.log(newOperation.result);
+}
 
 module.exports = Calculator;
